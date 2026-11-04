@@ -28,7 +28,7 @@
 
 ## 下载
 
-到 [Releases](../../releases/latest) 下载最新版压缩包（`角色卡创作清单-v1.2.1-win64.zip`，约 10.5 MB），解压后双击 `角色卡创作清单.exe`。
+到 [Releases](../../releases/latest) 下载最新版压缩包（`jueseka-checklist-v1.2.1-win64.zip`，约 10.5 MB），解压后双击 `角色卡创作清单.exe`。
 
 下载后解压，双击 `角色卡创作清单.exe`。`_internal` 文件夹必须和 exe 放在一起，整个文件夹一起复制才能运行。这是未签名的本地程序，Windows 首次运行可能出现 SmartScreen 提示，点「更多信息」→「仍要运行」即可。
 
