@@ -1,0 +1,8 @@
+# 统一用 LF 存进仓库，Windows 检出也不会变味
+* text=auto eol=lf
+
+# 二进制
+*.png binary
+*.jpg binary
+*.ico binary
+*.exe binary
