@@ -39,10 +39,10 @@ from widgets import (
 )
 
 APP_TITLE = "角色卡创作清单"
-APP_VERSION = "1.2.1"
+APP_VERSION = "1.2.2"
 APP_AUTHOR = "Liangel"
 # 发布后把网址填进来，欢迎页会自动变成可点的链接；留空则显示“待补充”。
-APP_LINK_LEINAP = ""
+APP_LINK_LEINAP = "https://discord.com/channels/1134557553011998840/1567466831843819651"
 APP_LINK_GITHUB = "https://github.com/anqi213/jueseka-checklist"
 
 
@@ -138,15 +138,15 @@ class WelcomeView(tk.Frame):
         font = self.theme.font(12)
         rows = [
             ("作者", APP_AUTHOR, None),
-            ("类脑", APP_LINK_LEINAP, APP_LINK_LEINAP),
-            ("GitHub", APP_LINK_GITHUB, APP_LINK_GITHUB),
+            ("类脑", "类脑社区（Discord）", APP_LINK_LEINAP),
+            ("GitHub", "github.com/anqi213/jueseka-checklist", APP_LINK_GITHUB),
         ]
-        for index, (label, value, url) in enumerate(rows):
+        for index, (label, text, url) in enumerate(rows):
             tk.Label(box, text=f"{label}：", bg=Palette.BG, fg=Palette.MUTED,
                      font=font, anchor="e").grid(row=index, column=0, sticky="e",
                                                  padx=(0, 4), pady=2)
             if url:
-                link = tk.Label(box, text=value, bg=Palette.BG, fg=Palette.ACCENT,
+                link = tk.Label(box, text=text, bg=Palette.BG, fg=Palette.ACCENT,
                                 font=font, anchor="w", cursor="hand2",
                                 underline=True)
                 link.grid(row=index, column=1, sticky="w", pady=2)
@@ -156,8 +156,8 @@ class WelcomeView(tk.Frame):
                 link.bind("<Leave>",
                           lambda _e, w=link: w.configure(fg=Palette.ACCENT))
             else:
-                tk.Label(box, text=value or "待补充", bg=Palette.BG,
-                         fg=Palette.INK_SOFT if value else Palette.FAINT,
+                tk.Label(box, text=text or "待补充", bg=Palette.BG,
+                         fg=Palette.INK_SOFT if text else Palette.FAINT,
                          font=font, anchor="w").grid(row=index, column=1,
                                                      sticky="w", pady=2)
 

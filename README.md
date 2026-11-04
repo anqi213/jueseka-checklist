@@ -28,7 +28,7 @@
 
 ## 下载
 
-到 [Releases](../../releases/latest) 下载最新版压缩包（`jueseka-checklist-v1.2.1-win64.zip`，约 10.5 MB），解压后双击 `角色卡创作清单.exe`。
+到 [Releases](../../releases/latest) 下载最新版压缩包（`jueseka-checklist-v1.2.2-win64.zip`，约 10.5 MB），解压后双击 `角色卡创作清单.exe`。
 
 下载后解压，双击 `角色卡创作清单.exe`。`_internal` 文件夹必须和 exe 放在一起，整个文件夹一起复制才能运行。这是未签名的本地程序，Windows 首次运行可能出现 SmartScreen 提示，点「更多信息」→「仍要运行」即可。
 
@@ -81,7 +81,7 @@ docs/                  README 截图
 
 - 作者：Liangel
 - GitHub：[@anqi213](https://github.com/anqi213)
-- 类脑：待补充
+- 类脑：可在 Discord 类脑社区的对应频道里找到本项目（服务器成员可直接打开 [讨论频道](https://discord.com/channels/1134557553011998840/1567466831843819651)）
 
 ## 许可证
 
